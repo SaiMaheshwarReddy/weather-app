@@ -5,6 +5,8 @@ export const ForecastDataContext = React.createContext<{setForeCastData: Functio
 export const ForecastProvider = ({ children }) => {
   const [forecastData, setForeCastData] = React.useState<null | any>(null);
   const [locationDetails, setLocationDetails] = React.useState()
+  const [navOpen, setNavOpen] = React.useState(false)
+
 
   return (
     <ForecastDataContext.Provider
@@ -12,7 +14,9 @@ export const ForecastProvider = ({ children }) => {
         forecastData,
         setForeCastData,
         locationDetails,
-        setLocationDetails
+        setLocationDetails,
+        navOpen,
+        setNavOpen
       }}
     >
       {children}

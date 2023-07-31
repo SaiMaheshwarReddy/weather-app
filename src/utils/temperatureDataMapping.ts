@@ -25,7 +25,7 @@ const temperatureDataMapping = [
   {
     name: "Snow",
     min: { c: -5, f: 23 },
-    max: { c: 5, f: 41 },
+    max: { c: 7, f: 41 },
     img: Snow,
   },
   {
@@ -42,8 +42,8 @@ const temperatureDataMapping = [
   },
   {
     name: "Hail",
-    min: { c: -10, f: 14 },
-    max: { c: -50, f: -58 },
+    min: { c: -50, f: -58 },
+    max: { c: -10, f: 14 },
     img: Hail,
   },
 
@@ -70,6 +70,12 @@ const temperatureDataMapping = [
     min: { c: 10, f: 50 },
     max: { c: 25, f: 77 },
     img: LightRain,
+  },
+  {
+    name: "Hail",
+    min: { c: -100, f: -1000 },
+    max: { c: -51, f: -500 },
+    img: Hail,
   },
 
 ];

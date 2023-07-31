@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import { ForecastProvider } from "./context";
 import SideNav from "./components/SideNav";
 function App() {
+  
   return (
     <ForecastProvider>
       <div className="overflow-hidden w-full h-screen bg-blue-900 pb-0 flex flex-col lg:flex-row lg:items-start justify-start items-center">
